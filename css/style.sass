@@ -1,0 +1,208 @@
+$st_padding: 50px 180px 0
+$aqua: #28c8c6
+$but_purple: #a100ff
+$purple: #8500d2
+$twitter: #69b6f2
+$facebook: #3a579a
+
+*
+	transition: all .3s ease-in-out
+
+html, body
+	width: 100vw
+	height: 100vh
+	margin: 0
+	padding: 0
+	overflow-x: hidden
+	font-family: 'Roboto', sans-serif;
+
+.full
+	width: 100vw
+	height: 100vh
+
+header
+	background:
+		image: url(../img/header-bg.png)
+		size: cover
+		repeat: no-repeat
+		position: center
+
+	.content
+		height: calc(100% - 50px)
+		width: 100%
+		padding: $st_padding
+		color: white
+		position: relative
+
+		.links
+			width: calc(100% - 180px*2)
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+			ul
+				display: flex
+				flex-basis: 40%
+				align-items: center
+				justify-content: space-between
+				list-style: none
+				font-size: 0.8em
+				font-weight: bold
+
+				li:first-child
+					position: relative
+
+					&:after
+						content: ''
+						width: 150%
+						height: 3px
+						background: $aqua
+						position: absolute
+						bottom: -20px
+						left: -10px
+
+				button
+					width: 115px
+					height: 45px
+					display: flex
+					align-items: center
+					justify-content: center
+					color: white
+					background: $but_purple
+					outline: none
+					border: none
+					border-radius: 5px
+
+					span
+						font-size: 1.1em
+						line-height: 1
+						font-weight: bold
+						margin-right: 10px
+		
+		.wrapper
+			position: relative
+			top: calc(50% - 200px)
+
+		.text
+			width: 400px
+
+			h1
+				margin: 10px 0
+				font-size: 3em
+				font-weight: bold
+				line-height: 1
+
+			p
+				font-size: 0.8em
+				font-weight: bold
+				line-height: 1.5
+				text-shadow: 0 0 5px black
+
+		.form
+			width: 500px
+			height: 45px
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+			.select 
+				width: 215px
+				height: 45px
+				overflow: hidden
+				background: 
+					image: url(../img/arrow-down.png)
+					repeat: no-repeat
+					position: 93% 50%
+					color: #fff
+					size: 9%
+				border-radius: 3px
+
+				select
+					width: 215px
+					height: 45px
+					font-size: 0.8em
+					font-weight: bold
+					line-height: 1
+					-webkit-appearance: none
+					color: #525252
+					background-color: transparent
+					padding: 15px
+					border: 0
+					border-radius: 0
+					outline: none
+					cursor: pointer
+
+			.email 
+				width: 210px
+				height: 45px
+				display: flex
+				align-items: center
+				justify-content: space-between
+				border-radius: 3px
+				overflow: hidden
+
+				input
+					width: 80%
+					height: 45px
+					border: 0
+					outline: 0
+					padding-left: 15px
+					font-weight: bold
+
+				.arrR
+					width: 20%
+					height: 45px
+					background:
+						image: url(../img/blue-arrow-right.png)
+						repeat: no-repeat
+						position: 40% 50%
+						size: 33%
+						color: white
+
+			.enterBut
+				width: 50px
+				height: 45px
+				background: $aqua
+				outline: 0
+				border: 0
+				border-radius: 5px
+
+	.bottom
+		width: 100%
+		height: calc(85px / 2)
+		position: relative
+		bottom: 0
+		left: 0
+
+		.arrD
+			position: absolute
+			bottom: 0
+			left: calc(50% - 85px/2)
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 85px
+			height: 85px
+			background-color: white
+			border-radius: 50%
+			cursor: pointer
+
+		.contact
+			position: absolute
+			right: -33px
+			bottom: 20px
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 145px
+			height: 45px
+			font-size: 0.9em
+			font-weight: bold
+			color: white
+			padding: 5px 0
+			background-color: $purple
+			transform: rotate(270deg)
+			border-radius: 5px
+			cursor: pointer
+
+
