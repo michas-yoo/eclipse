@@ -4,4 +4,4 @@ This is a sample website, you can find mockup in the *img* folder: [Eclipse.psd]
 
 ## Project is not ready yet
 
-## You can [preview it here](https://michas-yoo.github.io/Eclipse).
+## You can [preview it here](https://michas-yoo.github.io/eclipse).
