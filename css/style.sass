@@ -4,9 +4,8 @@ $but_purple: #a100ff
 $purple: #8500d2
 $twitter: #69b6f2
 $facebook: #3a579a
-
-*
-	transition: all .3s ease-in-out
+$header: #333b42
+$text:  #9da1a5
 
 html, body
 	width: 100vw
@@ -19,6 +18,9 @@ html, body
 .full
 	width: 100vw
 	height: 100vh
+
+.arrD
+	cursor: pointer
 
 header
 	background:
@@ -48,6 +50,7 @@ header
 				list-style: none
 				font-size: 0.8em
 				font-weight: bold
+				cursor: pointer
 
 				li:first-child
 					position: relative
@@ -72,6 +75,7 @@ header
 					outline: none
 					border: none
 					border-radius: 5px
+					cursor: pointer
 
 					span
 						font-size: 1.1em
@@ -166,6 +170,7 @@ header
 				outline: 0
 				border: 0
 				border-radius: 5px
+				cursor: pointer
 
 	.bottom
 		width: 100%
@@ -183,7 +188,9 @@ header
 			justify-content: center
 			width: 85px
 			height: 85px
-			background-color: white
+			background:
+				image: url(../img/roundy-bg.png)
+				position: center
 			border-radius: 50%
 			cursor: pointer
 
@@ -205,4 +212,80 @@ header
 			border-radius: 5px
 			cursor: pointer
 
+main
+	.design
+		background:
+			image: url(../img/roundy-bg.png)
+			position: center
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		padding: $st_padding
+		text-align: center
+		
+		h2
+			margin: 45px 0 10px 0
+			font-size: 2.1em
+			color: $header
 
+		p
+			width: 500px
+			color: $text
+			font-weight: 700
+			font-size: 0.8em
+			margin-bottom: 70px
+
+	.features
+
+		.arrD
+			width: 100%
+			position: relative
+
+			.wrapper
+				background: #22a7f0
+				width: 90px
+				height: 90px
+				display: flex
+				align-items: center
+				justify-content: center
+				position: absolute
+				top: -65px
+				left: calc(50% - 45px)
+				border-radius: 50%
+
+		.content
+			padding: 100px 180px
+			text-align: center
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+
+			h2
+				color: $header
+				font-size: 1.7em
+				margin: 30px 0 10px 0
+
+			p
+				width: 60%
+				color: $text
+				font-size: 0.8em
+				font-weight: 700
+
+			.grid
+				display: flex
+				text-align: center
+
+				.gitem
+					display: flex
+					flex-direction: column
+					align-items: center
+					justify-content: flex-start
+					background: $purple
+
+					h4
+						color: $header
+						text-transform: uppercase
+						border: 2px solid red
+						margin-top: 0
