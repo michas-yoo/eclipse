@@ -237,25 +237,23 @@ main
 			margin-bottom: 70px
 
 	.features
+		position: relative
+		box-shadow: 0 1px 5px -2px #aaa
 
 		.arrD
-			width: 100%
-			position: relative
-
-			.wrapper
-				background: #22a7f0
-				width: 90px
-				height: 90px
-				display: flex
-				align-items: center
-				justify-content: center
-				position: absolute
-				top: -65px
-				left: calc(50% - 45px)
-				border-radius: 50%
+			background: #22a7f0
+			width: 90px
+			height: 90px
+			display: flex
+			align-items: center
+			justify-content: center
+			position: absolute
+			top: -50px
+			left: calc(50% - 45px)
+			border-radius: 50%
 
 		.content
-			padding: 100px 180px
+			padding: 100px 180px 75px
 			text-align: center
 			display: flex
 			flex-direction: column
@@ -264,14 +262,16 @@ main
 
 			h2
 				color: $header
-				font-size: 1.7em
-				margin: 30px 0 10px 0
+				font-size: 1.4em
+				margin: 30px 0 5px 0
 
 			p
 				width: 60%
 				color: $text
 				font-size: 0.8em
 				font-weight: 700
+				line-height: 2
+				margin-bottom: 50px
 
 			.grid
 				display: flex
@@ -282,10 +282,42 @@ main
 					flex-direction: column
 					align-items: center
 					justify-content: flex-start
-					background: $purple
+
+					.imgWrap
+						height: 105px
+						width: 105px
+						border-radius: 50%
+						background-color: $purple
+						display: flex
+						align-items: center
+						justify-content: center
 
 					h4
 						color: $header
 						text-transform: uppercase
-						border: 2px solid red
-						margin-top: 0
+						margin-top: 35px
+						margin-bottom: 10px
+						font-size: 0.9em
+
+					p
+						width: 100%
+						line-height: 2
+
+		.BottomArrD
+			height: 90px
+			width: 90px
+			background: white
+			display: flex
+			align-items: center
+			justify-content: center
+			border-radius: 50%
+			position: absolute
+			bottom: -40px
+			left: calc(50% - 45px)
+			box-shadow: 0px 1px 5px -2px #aaa
+
+	.guidelines
+		background: #f6f9fa
+
+		h2
+			margin: 0
