@@ -14,6 +14,7 @@ html, body {
   cursor: pointer; }
 
 header {
+  background-color: #360852;
   background-image: url(../img/header-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
