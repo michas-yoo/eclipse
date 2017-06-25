@@ -18,9 +18,17 @@ html, body
 .full
 	width: 100vw
 	height: 100vh
+	background-attachment: fixed
 
 .arrD
 	cursor: pointer
+
+h1, h2, h4
+	color: $header
+
+p
+	color: $text
+	font-size: 0.8em
 
 header
 	background:
@@ -96,9 +104,10 @@ header
 				font-size: 3em
 				font-weight: bold
 				line-height: 1
+				color: white
 
 			p
-				font-size: 0.8em
+				color: white
 				font-weight: bold
 				line-height: 1.5
 				text-shadow: 0 0 5px black
@@ -228,13 +237,10 @@ main
 		h2
 			margin: 45px 0 10px 0
 			font-size: 2.1em
-			color: $header
 
 		p
 			width: 500px
-			color: $text
 			font-weight: 700
-			font-size: 0.8em
 			margin-bottom: 70px
 
 	.features
@@ -262,14 +268,11 @@ main
 			justify-content: center
 
 			h2
-				color: $header
 				font-size: 1.4em
 				margin: 30px 0 5px 0
 
 			p
 				width: 60%
-				color: $text
-				font-size: 0.8em
 				font-weight: 700
 				line-height: 2
 				margin-bottom: 50px
@@ -294,7 +297,6 @@ main
 						justify-content: center
 
 					h4
-						color: $header
 						text-transform: uppercase
 						margin-top: 35px
 						margin-bottom: 10px
@@ -303,6 +305,7 @@ main
 					p
 						width: 100%
 						line-height: 2
+						font-size: 1em
 
 		.BottomArrD
 			height: 90px
@@ -315,10 +318,206 @@ main
 			position: absolute
 			bottom: -40px
 			left: calc(50% - 45px)
-			box-shadow: 0px 1px 5px -2px #aaa
+			box-shadow: 0px 1px 5px -2.2px #aaa
 
 	.guidelines
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		text-align: center
 		background: #f6f9fa
+		padding: $st_padding
 
 		h2
-			margin: 0
+			margin: 65px 0 0
+
+		p
+			width: 75%
+			font-weight: 700
+			line-height: 2
+
+		.guides
+			width: 50%
+			height: 50px
+			margin-top: 20px
+			display: flex
+			border: 1px solid $aqua
+			border-right: none
+
+			.guide
+				display: flex
+				height: 50px
+				flex-basis: 20%
+				flex-grow: 1
+				align-items: center
+				justify-content: center
+				border-right: 1px solid $aqua
+				cursor: pointer
+
+				&:last-item
+					border-right: 1px solid red
+
+				h4
+					margin: 0
+					color: $aqua
+					font-weight: 700
+					font-size: 0.8em
+
+			.picked
+				background-color: $aqua
+				
+				h4
+					color: #f6f9fa
+
+		.grid
+			margin: 41px 0 85px
+			display: flex
+
+			.gitem
+				background-color: white
+				border-radius: 5px
+				overflow: hidden
+				margin-right: 15px
+
+				&:last-item
+					margin-right: 0
+
+				.lamp
+					width: 310px
+					height: 175px
+					background: 
+						image: url(../img/circle.png)
+						size: 140% 170%
+						repeat: no-repeat
+						position: 30% 40%
+				
+				.bottom
+					width: 100%
+					height: 65px
+					display: flex
+					align-items: center
+					justify-content: center
+
+					h4
+						font-size: 0.8em
+						font-weight: 700
+						text-transform: uppercase
+						flex-grow: 1
+
+					.arr
+						width: 7px
+						height: 7px
+						margin-right: 20px
+						border-right: 2px solid $aqua
+						border-bottom: 2px solid $aqua
+						transform: rotate(-45deg)
+	
+	.girl
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		padding-left: 175px
+		background: 
+			image: url(../img/girl.png)
+			size: cover
+			repeat: no-repeat
+			position: center
+		
+		.txt
+			width: 30%
+			margin: 20px 0 0 30px
+
+			h1
+				color: white
+				font-size: 3.3em
+				line-height: 1
+				margin-bottom: 0
+
+			p
+				color: white
+				font-size: 0.9em
+				font-weight: 900
+				line-height: 1.5
+	
+	.last
+		width: 100vw
+		height: 700px
+		position: relative
+		padding-left: 30px
+		display: flex
+		align-items: center
+		justify-content: flex-start
+
+		.arrUp
+			width: 50px
+			height: 50px
+			border-radius: 5px
+			background:
+				color: #919191
+				image: url(../img/arrow-up.png)
+				repeat: no-repeat
+				position: center
+			cursor: pointer
+
+		img
+			position: absolute
+			top: -55%
+			right: 10%
+
+footer
+	width: 74%
+	padding: $st_padding
+	display: flex
+	flex-direction: column
+
+	.media
+		width: 165px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		align-self:  flex-end
+		
+		.but
+			width: 80px
+			height: 30px
+			display: flex
+			align-items: center
+			justify-content: center
+			color: white
+			font-size: 0.7em
+			font-weight: 700
+			border-radius: 5px
+
+			img
+				margin-right: 5px
+
+		.twitter
+			background-color: $twitter
+
+		.facebook
+			background-color: $facebook
+
+	.wrapper
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+		.links
+			width: 18%
+			display: flex
+			justify-content: space-between
+
+			ul
+				padding: 0
+				list-style: none
+				color: $text
+				font-size: 0.8em
+				line-height: 2.3
+
+		.txt
+			text-align: right
+			font-weight: 700
+
+		
