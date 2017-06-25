@@ -608,7 +608,8 @@ footer {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 100px; }
   footer .media {
     width: 165px;
     display: -webkit-box;
