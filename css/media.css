@@ -1,0 +1,7 @@
+@media (max-width: 770px) {
+  header {
+    color: black; } }
+
+@media (max-width: 425px) {
+  section {
+    background: pink; } }

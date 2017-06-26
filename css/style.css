@@ -515,7 +515,8 @@ main .guidelines {
         -webkit-box-pack: center;
         -webkit-justify-content: center;
         -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+        cursor: pointer; }
         main .guidelines .grid .gitem .bottom h4 {
           font-size: 0.8em;
           font-weight: 700;
@@ -685,3 +686,208 @@ footer {
     footer .wrapper .txt {
       text-align: right;
       font-weight: 700; }
+      footer .wrapper .txt p {
+        margin-top: 0; }
+
+@media (max-width: 770px) {
+  header .content {
+    padding: 5%; }
+    header .content .links {
+      width: 87%; }
+      header .content .links ul {
+        -webkit-flex-basis: 80%;
+        -ms-flex-preferred-size: 80%;
+        flex-basis: 80%; }
+  main .features .content {
+    padding: 5%; }
+    main .features .content p {
+      width: 100%; }
+    main .features .content .grid {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      main .features .content .grid .gitem {
+        -webkit-flex-basis: 45%;
+        -ms-flex-preferred-size: 45%;
+        flex-basis: 45%; }
+  main .guidelines {
+    padding: 5%; }
+    main .guidelines p {
+      width: 100%; }
+    main .guidelines .guides {
+      width: 90%; }
+    main .guidelines .grid {
+      width: 100%;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      main .guidelines .grid .gitem {
+        -webkit-flex-basis: 90%;
+        -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+        margin-bottom: 15px;
+        margin-right: 0; }
+        main .guidelines .grid .gitem:last-child {
+          margin-bottom: 0; }
+        main .guidelines .grid .gitem .lamp {
+          width: 100%;
+          height: 250px;
+          -webkit-transition: all .3s ease-in-out;
+          -o-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+          background-size: cover;
+          background-position: center; }
+  main .girl {
+    padding: 5%; }
+    main .girl .txt {
+      width: 60%; }
+  main .last {
+    height: 450px; }
+    main .last img {
+      width: 500px;
+      top: -25%; }
+  footer {
+    padding: 5%;
+    width: 90%;
+    margin-bottom: 0; }
+    footer .links {
+      -webkit-flex-basis: 30%;
+      -ms-flex-preferred-size: 30%;
+      flex-basis: 30%; } }
+
+@media (max-width: 425px) {
+  header {
+    padding: 0 3%; }
+    header .content .links {
+      width: 100%; }
+      header .content .links img {
+        display: none; }
+      header .content .links ul {
+        padding-left: 0;
+        margin-top: 0;
+        -webkit-flex-basis: 83%;
+        -ms-flex-preferred-size: 83%;
+        flex-basis: 83%; }
+        header .content .links ul button {
+          width: 90px; }
+    header .content .wrapper {
+      top: calc(50% - 230px); }
+      header .content .wrapper .text h1 {
+        width: 80%;
+        margin: 0;
+        text-align: center; }
+      header .content .wrapper .text p {
+        width: 80%;
+        text-align: center; }
+      header .content .wrapper .form {
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        header .content .wrapper .form .select, header .content .wrapper .form .email {
+          -webkit-flex-basis: 90%;
+          -ms-flex-preferred-size: 90%;
+          flex-basis: 90%;
+          margin-bottom: 15px; }
+        header .content .wrapper .form .select select {
+          width: 100%; }
+        header .content .wrapper .form .enterBut {
+          margin-top: 5px;
+          text-align: center; }
+    header .bottom {
+      display: none; }
+  main .design {
+    padding: 5%;
+    padding-bottom: 0; }
+    main .design h2 {
+      margin-top: 0; }
+    main .design p {
+      width: 100%; }
+  main .features .arrD, main .features .BottomArrD {
+    display: none; }
+  main .features .content h2 {
+    margin-top: 0;
+    font-size: 2.1em; }
+  main .features .content .grid .gitem {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+  main .guidelines h2 {
+    margin-top: 0;
+    font-size: 1.9em; }
+  main .guidelines .guides {
+    width: 100%;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    border: none; }
+    main .guidelines .guides .picked {
+      border: none; }
+    main .guidelines .guides .guide {
+      border: 1px solid #28c8c6;
+      -webkit-flex-basis: 45%;
+      -ms-flex-preferred-size: 45%;
+      flex-basis: 45%; }
+      main .guidelines .guides .guide:nth-child(3) {
+        border: none;
+        border-left: 1px solid #28c8c6;
+        border-bottom: 1px solid #28c8c6; }
+      main .guidelines .guides .guide h4 {
+        font-size: 0.7em; }
+  main .girl {
+    padding: 5% 0;
+    background-color: #8500d2;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    main .girl .txt {
+      width: 90%;
+      margin-left: 0; }
+      main .girl .txt h1 {
+        margin-top: 0; }
+      main .girl .txt h1, main .girl .txt p {
+        text-align: center; }
+  main .last {
+    height: 250px; }
+    main .last img {
+      width: 350px;
+      top: -45%; }
+  footer {
+    margin-top: 50px; }
+    footer .media {
+      width: 100%;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+    footer .wrapper {
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      footer .wrapper .links {
+        width: 80%;
+        margin-left: 50px; }
+        footer .wrapper .links ul {
+          width: 50%; }
+      footer .wrapper .txt {
+        text-align: center; }
+    footer p {
+      text-align: center; } }
