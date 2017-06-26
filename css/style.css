@@ -23,7 +23,7 @@ p {
 
 header {
   background-color: #360852;
-  background-image: url(../img/header-bg.png);
+  background-image: url(../img/header-bg-min.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -138,7 +138,7 @@ header {
         width: 215px;
         height: 45px;
         overflow: hidden;
-        background-image: url(../img/arrow-down.png);
+        background-image: url(../img/arrow-down-min.png);
         background-repeat: no-repeat;
         background-position: 93% 50%;
         background-color: #fff;
@@ -185,7 +185,7 @@ header {
         header .content .form .email .arrR {
           width: 20%;
           height: 45px;
-          background-image: url(../img/blue-arrow-right.png);
+          background-image: url(../img/blue-arrow-right-min.png);
           background-repeat: no-repeat;
           background-position: 40% 50%;
           background-size: 33%;
@@ -222,7 +222,7 @@ header {
       justify-content: center;
       width: 85px;
       height: 85px;
-      background-image: url(../img/roundy-bg.png);
+      background-image: url(../img/roundy-bg-min.png);
       background-position: center;
       border-radius: 50%;
       cursor: pointer; }
@@ -256,7 +256,7 @@ header {
       cursor: pointer; }
 
 main .design {
-  background-image: url(../img/roundy-bg.png);
+  background-image: url(../img/roundy-bg-min.png);
   background-position: center;
   display: -webkit-box;
   display: -webkit-flex;
@@ -497,7 +497,7 @@ main .guidelines {
       main .guidelines .grid .gitem .lamp {
         width: 310px;
         height: 175px;
-        background-image: url(../img/circle.png);
+        background-image: url(../img/circle-min.png);
         background-size: 140% 170%;
         background-repeat: no-repeat;
         background-position: 30% 40%; }
@@ -549,7 +549,7 @@ main .girl {
   -ms-flex-pack: start;
   justify-content: flex-start;
   padding-left: 175px;
-  background-image: url(../img/girl.png);
+  background-image: url(../img/girl-min.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -589,7 +589,7 @@ main .last {
     height: 50px;
     border-radius: 5px;
     background-color: #919191;
-    background-image: url(../img/arrow-up.png);
+    background-image: url(../img/arrow-up-min.png);
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer; }
